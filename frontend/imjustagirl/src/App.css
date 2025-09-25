@@ -1,0 +1,2810 @@
+/*---  common bars  ---*/
+
+.navbar{
+  background-color: #d1b2c2;
+  position: fixed;
+  width: 100%;
+  top:0;
+  z-index: 99;
+}
+.navbar-brand{
+  font-family: "Emilys Candy", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  background-color: #fdf4f9;
+  padding: 14px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px 0 #e8d0dc;
+}
+.logo{
+  height: 70px;
+  width: 100px;
+  border-radius: 20%;
+  margin-left: 60px;
+  box-shadow: 5px 5px #e8d0dc ;
+}
+.bytasha{
+  font-family:  "Emilys Candy", serif;
+  font-size: x-large;
+  text-decoration: none;
+  color:black;
+}
+.sidebar{
+  width:250px;
+  height:900px;
+  background-color: #cfb0c0;
+  position: fixed;
+  z-index: 99;
+}
+.sidebar-lists{
+  background-color: #fdf4f9; 
+  margin-top: 8px;
+  padding: 8px;
+  width: 180px;
+  text-align: center;
+  list-style: none;
+  font-family: "Emilys Candy", serif;
+  font-weight:500;
+  border-radius: 15px;
+}
+.sidebar-lists:hover{
+  background-color: #e8d0dc;
+}
+.sidebar-lists1:hover{
+  background-color:  #e8d0dc;
+}
+.sidebar-lists1{
+  background-color:#fdf4f9; 
+  padding: 8px;
+  margin-top: 10px;
+  width: 180px;
+  text-align: center;
+  list-style: none;
+  font-family: "Emilys Candy", serif;
+  font-weight:500;
+  border-radius: 15px;
+}
+.icons{
+  height: 28px;
+  padding-right: 10px;
+}
+.sidebar-btn{
+  background-color: transparent;
+  border: none;
+}
+
+
+/* ---for logo--- */
+
+.bglogo {
+  display: flex;
+  width: 100vh;
+  height:101vh;
+  margin: -9px;
+  margin-right:200px;
+}
+.bgimg {
+  margin-left: -9px;
+}
+.logovid {
+  position: absolute;
+  margin-top: -570px;
+  margin-left: 550px;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  animation: glowPulse 3s ease-in-out infinite;
+}
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 10px rgba(153, 22, 44, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(97, 2, 21, 0.696);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(161, 54, 77, 0.4);
+  }
+}
+
+
+/* ---home page--- */
+
+.main{
+  text-align: center;
+  margin-top:91px;
+  padding-top:20px;
+}
+.main2{
+  display: flex;
+  justify-content:space-evenly ;
+  margin-top: 70px;
+}
+.text1{
+  font-family: "Montez", cursive;
+}
+.description {
+  width: 550px;
+  height: 60px;
+  background: #d38292;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin-left: 520px;
+  margin-top: 30px;
+  padding: 10px;
+}
+.description:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid #d38292;
+  border-bottom: 13px solid transparent;
+}
+.description1 {
+  width: 550px;
+  height: 60px;
+  background: #be9dae;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin-left: 600px;
+  margin-top: 20px;
+  padding: 10px;
+}
+.description1:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid #be9dae;
+  border-bottom: 13px solid transparent;
+}
+.search{
+  background-color: #f5eaef;
+  width:900px;
+  margin-left: 190px;
+  padding: 8px;
+  border-radius: 30px;
+}
+.btn1{
+  padding: 8px;
+  background-color: #e46b83;
+  border-radius: 30px;
+  margin-left: 20px;
+  font-family: "Delius Swash Caps", cursive;
+}
+.btn1:hover{
+  background-color: #b84040;
+}
+.bowimg{
+  font-size: 40px;
+  margin-left: 510px;
+  margin-top: -85px;
+}
+.cards-block.carousel {
+  position: relative;
+  width: 75%;
+  overflow: hidden;
+  background-color: #F6F5F2;
+  padding: 20px 0;
+  display: flex;
+}
+.group {
+  display: flex;
+  gap: 20px;
+  animation: scrolling 20s linear infinite;
+  will-change: transform;
+}
+#card1{
+  margin-left: 38px;
+}
+#card1-img{
+  height: 100vh;
+}
+.card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 350px;
+  background: #fff;
+  box-shadow: 0 4px 8px 0 grey;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card-img {
+  width: 100%;
+  height: auto;
+}
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.cards-block.carousel:hover .group {
+  animation-play-state: paused;
+}
+.side-section{
+  border: 1px solid black;
+  width: 300px;
+  height: 250px;
+  margin-top: 70px;
+  background-color: #f5eaef;
+  border-radius: 30px;
+}
+.side-section-text{
+  font-family: "Montez", cursive;
+  padding: 10px;
+  margin-top: 18px;
+}
+.bowimg1{
+  margin-top: -30px;
+  float: right;
+  font-size: 40px;
+}
+.btns{
+  margin-left: -580px;
+  margin-top: 160px;
+  font-family: "Delius Swash Caps", cursive;
+}
+
+
+/* ---for about us--- */
+
+.about {
+  margin-top:91px;
+  padding-top:10px;
+}
+.about-container {
+  margin-left:112px;
+}
+.about-con {
+  display: flex;
+}
+.abouthead {
+  font-family: "Emilys Candy", serif; 
+  font-size:35px;
+  margin-left:540px;
+}
+.buttons {
+  margin-top:20px; 
+  margin-left:540px;
+}
+.site, .us {
+  font-family: "Delius Swash Caps", cursive;
+  font-size:20px;
+  width:90px;
+  height:40px;
+  margin-left:20px;
+  background-color: #e46b83;
+  border-radius: 30px;
+}
+.site:hover, .us:hover{
+  background-color: #b84040;
+}
+.content-container1 {
+  margin-top:25px;
+  margin-left: 200px;
+  margin-bottom:-50px;
+  border:1px solid black;
+  border-radius: 120px;
+  background-color:#A87676;
+  padding:20px;
+  width: 140vh; 
+  height:126vh;  
+}
+.content1 {
+  margin-top:50px;
+  margin-left:50px;
+  border:1px solid black;
+  border-radius: 120px;
+  background-color:#E1ACAC;
+  padding:20px;
+  width: 100vh;  
+}
+.sitehead {
+  margin-top: 10px;
+  margin-left:230px;
+  font-family: "Love Ya Like A Sister", cursive;
+  font-size:30px;
+  font-weight: 400;
+  font-style: normal;
+} 
+.siteabout {
+  margin: 40px;
+  text-align: justify;
+  font-family: "Margarine", sans-serif;
+  font-size:20px;
+}
+.content-container2 {
+  margin-top:25px;
+  margin-left: 200px;
+  margin-bottom:-50px;
+  border:1px solid black;
+  border-radius: 120px;
+  background-color:#A87676;
+  padding:20px;
+  width: 140vh; 
+  height:80vh;  
+}
+.content2 {
+  margin-top:50px;
+  margin-left: 65px;
+  border:1px solid black;
+  border-radius: 120px;
+  background-color:#E1ACAC;
+  padding:20px;
+  width: 97vh;  
+}
+.ushead {
+  margin-left:150px;
+  margin-top: 20px;
+  font-family: "Love Ya Like A Sister", cursive;
+  font-size:30px;
+  font-weight: 400;
+  font-style: normal;
+} 
+.usabout {
+  margin:40px;
+  text-align: justify;
+  font-family: "Margarine", sans-serif;
+  font-size:20px;
+}
+.tashahead {
+  text-align: center;
+  font-size:28px;
+}
+.about-side-section {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 150px;
+  border:1px solid black;
+  background-color: #e9bbbb;
+  font-family: "Love Ya Like A Sister", cursive;
+  text-align: center;
+  border-radius: 50px;
+  height: 180px;
+  width: 300px;
+  padding: 30px;
+}
+
+
+/* ---Footer--- */
+
+.footer{      
+  background-color: #bea7bd;
+  padding: 30px;
+  color: '#333';
+  margin-top: 100px;
+  border-top: 2px dotted #bfaa9c;
+  font-family: sans-serif;
+  font-size:15px;
+  margin-left: 250px;
+  padding-left: 50px;
+}
+.footer1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;  
+}
+.footer-text{
+  font-family: "Montez", cursive;
+  width:450px;
+}
+.rating{
+  margin-top: 50px;
+}
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '❤︎ ';
+}
+.rate > input:checked ~ label {
+  color: #c93333;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #c93333;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c93333;
+}
+.footer-follow{
+   font-family:"Love Ya Like A Sister", cursive;
+}
+.footer-heading{
+  font-family:  "Emilys Candy", serif;
+  font-weight: bold;
+}
+.flink {
+  text-decoration: none;
+  color:black;
+}
+.footer-mail{
+  font-family:"Love Ya Like A Sister", cursive;
+}
+.footer-btn{
+  padding: 8px;
+  background-color: #e46b83;
+  border-radius: 30px;
+  margin-left: 20px;  
+  font-family: "Delius Swash Caps", cursive;
+}
+.footer-btn:hover{
+  background-color: #b84040;
+}
+.footer-copyright{
+  float: right;
+  font-family:"Delius Swash Caps", cursive;
+}
+
+
+/* --- forms --- */
+
+.signup-form{
+  border:1px solid grey;
+  height:500px;
+  background-color: #e2c9d6;
+  width:450px;
+  margin-left: 600px;
+  padding: 30px;
+  margin-top: 50px;
+  position: absolute;
+  z-index:99;
+  border-radius: 50px;
+}
+.popup-btn{
+  float: right;
+  border-radius: 40%;
+  background-color: #e46b83;
+}
+.popup-btn1{
+  float: right;
+  margin-top:-40px;
+  border-radius: 40%;
+  background-color: #e46b83;
+}
+.field1{
+  border-radius: 50px;
+  margin-top: 30px;
+}
+.popupbtn-2{
+  background-color: #e46b83;
+  border-radius: 20px;
+  padding: 6px;
+  margin-bottom:10px;
+}
+.popupbtn-submit{
+  margin-top: 40px;
+  font-family: "Delius Swash Caps", cursive;
+}
+.signup-text{
+  font-family: "Emilys Candy", serif;
+}
+.form-label{
+  font-family: "Delius Swash Caps", cursive;
+  font-size: large;
+  font-weight: 100;
+  color:black;
+  text-decoration: none;
+}
+.login-form{
+  border:1px solid grey;
+  height:360px;
+  background-color: #e2c9d6;
+  width:400px;
+  margin-left: 600px;
+  padding: 30px;
+  margin-top: 50px;
+  position: absolute;
+  z-index:99;
+  border-radius: 50px;
+}
+.login-text{
+  font-family: "Emilys Candy", serif; 
+}
+.forgot-form{
+  border:1px solid grey;
+  height:250px;
+  background-color: #e2c9d6;
+  width:400px;
+  margin-left: 600px;
+  padding: 30px;
+  margin-top: 50px;
+  position: absolute;
+  z-index:99;
+  border-radius: 50px;
+}
+.forgot-form-label{
+  font-family: "Delius Swash Caps", cursive;
+  font-size: large;
+  font-weight: 100;
+  margin-top: 30px;
+}
+
+.popupbtn-admin{
+  background-color: #DA6363;
+  border-radius: 20px;
+  padding: 6px;
+}
+.admin-login-form{
+  border:1px solid grey;
+  height:350px;
+  background-color: #e2c9d6;
+  width:400px;
+  margin-left: 600px;
+  padding: 30px;
+  margin-top: 50px;
+  position: absolute;
+  z-index:99;
+  border-radius: 50px;
+  text-align: center;
+}
+
+
+/* --- WishList Page --- */
+
+.list-page-main{
+  margin-top: 91px;
+  padding-top:10px;
+  margin-left: 260px;
+}
+.list-heading{
+  font-family: "Emilys Candy", serif;
+  margin-left: 400px;
+}
+.list-heading1{
+  font-family: "Emilys Candy", serif;
+  margin-left: 220px;
+}
+.list-text{
+  font-family: "Delius Swash Caps", cursive;
+  font-size: larger;
+  margin-left: 100px;
+}
+.list-text1{
+  font-family: "Delius Swash Caps", cursive;
+  font-size: larger;
+}
+.list-description{
+  width: 550px;
+  height: 50px;
+  background: #d38292;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin-left: 450px;
+  margin-top: 30px;
+  padding: 10px;
+}
+.list-description:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 18px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid #d38292;
+  border-bottom: 13px solid transparent;
+}
+.list-description1 {
+  width: 550px;
+  height: 50px;
+  background: #be9dae;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin-left: 520px;
+  margin-top: 20px;
+  padding: 10px;
+}
+.list-description1:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 18px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid #be9dae;
+  border-bottom: 13px solid transparent;
+}
+#round-div1{
+  border: 1px solid #d4788b;
+  border-radius:200%;
+  width: 110px;
+  height: 100px;
+  padding-top: 20px;
+  font-family: "Emilys Candy", serif;
+  background-color:#dbbdcd ;
+}
+#round-div1:hover{
+  background-color: #d4788b;
+}
+.sparkle-container {
+  position: absolute;
+  width: 50%;
+  height: 200px; 
+  background:transparent; 
+  margin-top: -150px;
+}
+.sparkle-container1 {
+  position: absolute;
+  width: 40%;
+  height: 200px; 
+  background:transparent;
+  margin-top: -150px;
+  margin-left: 650px;
+}
+.star {
+  position: absolute;
+  color: #D0B8A8; 
+  font-size: 30px;
+}
+.list-group{
+  margin-top: 90px;
+  background-color:#f1e3ea;
+  width: 700px;
+  padding: 40px;
+  border-radius: 90px;
+  border:1px solid black;
+}
+.row {
+  gap:10px;
+  margin-top: 10px;
+}
+.list-text2{
+  font-family: "Montez", cursive;
+  font-size: xx-large;
+  margin-left: 50px;
+}
+.list-side-section{
+  background-color: #f1e3ea;
+  font-family: "Montez", cursive;
+  width: 400px;
+  padding: 30px;
+  height: 300px;
+  margin-top: 190px;
+  border: 1px solid black;
+  border-radius: 70px;
+}
+.list-sections{
+  display: flex;
+  /* justify-content: space-between; */
+}
+.heart-emoji{
+  margin-top: 300px;
+  font-size: xx-large;
+}
+.link-btn{
+  float: right;
+}
+
+
+
+/* ---for fashion--- */
+
+.fashion-main{
+  background-image: url('https://i.pinimg.com/1200x/89/b3/7b/89b37b336f10533f4e20c48fa10f2edb.jpg');
+  margin-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 80px;
+  margin-top: 91px;
+  margin-bottom: -100px;
+}
+.fashion-text1{
+  font-family: "Emilys Candy", serif;
+  margin-left: 600px;
+  text-align: center;
+  border: 1px solid black;
+  width: 580px;
+  border-radius: 30px;
+  height: 60px;
+  padding: 10px;
+  background-color:#adbab9 ;
+}
+.top-section{
+  margin-top: -20px;
+  margin-left: 400px;
+  font-family: "Montez", cursive;
+}
+.fashion-carousel{
+  height:570px;
+  background-color: #c4d1cf;
+  width: 450px;
+  border-radius: 80px;
+  padding: 50px;
+  margin-top: -170px;
+  border:1px solid black;
+}
+.carousel-inner{
+  height: 450px;
+  width: 350px;
+  background-size: contain;
+  border-radius: 80px;
+  border: 1px solid black;
+}
+.fashion-side-section{
+  margin-left: 600px;
+  margin-top: -360px;
+  background-color: #c4d1cf;
+  border-radius: 50px;
+  height: 150px;
+  width: 300px;
+  padding: 20px;
+  border:1px solid black;
+}
+.fashion-side-section:hover{
+  height:180px;
+  background-color:#a6bab7;
+  padding: 30px;
+  width: 350px;
+  border:1px solid black;
+}
+.mid-section{
+  margin-left: 500px;
+}
+.fashion-text{
+  font-family: "Montez", cursive;
+  margin-left: 600px;
+  margin-top: 50px;
+  font-size: 35px;
+  font-weight:700;
+}
+.fashion-text2{
+  font-family: "Montez", cursive;
+  font-size: 35px;
+  font-weight:700;
+}
+.fashion-text-class{
+  margin-top: 200px;
+  margin-left: 500px;
+}
+.col{
+  border: 1px solid black;
+  border-radius: 50px;
+  height: 130px;
+  padding: 50px;
+  background-color: #e5ece9;
+  font-family: "Emilys Candy", serif;
+  font-size: large;
+  font-weight: 900;
+  width: 510px;
+}
+#col1{
+  border: 1px solid black;
+  border-radius: 50px;
+  height: 130px;
+  padding: 50px;
+  background-color: #e5ece9;
+  font-family: "Emilys Candy", serif;
+  font-size: large;
+  font-weight: 900;
+  width: 340px;
+  margin-top: 15px;
+}
+.container-text{
+  text-decoration: none;
+  color: black;
+}
+.container1{
+  margin-left: -180px;
+  margin-right: 50px;
+  border:1px solid black;
+  margin-top: 250px;
+  padding: 50px;
+  border-radius: 80px;
+  background-color:#adbab9;
+}
+.col:hover{
+  background-color: #adbab9;
+  height:145px;
+  padding: 50px;
+  font-size: x-large;
+}
+#col1:hover{
+  background-color: #adbab9;
+  height:145px;
+  padding: 60px;
+  font-size: x-large;
+  padding-left: 25px;
+}
+.row1{
+  display: flex;
+  justify-content: space-evenly;
+}
+.row2{
+  display: flex;
+  justify-content: space-evenly;
+}
+.section1, .section2, .section3, .section4, .section5{
+  margin-top: 50px;
+  margin-left:260px;
+  border: 1px solid black;
+  border-radius: 50px;
+  height:fit-content;
+  width:82%;
+  background-color:#adbab9 ;
+  text-align: center;
+  padding:30px;
+  font-family: "Emilys Candy", serif;
+}
+
+.my-masonry-grid {
+  display: flex;
+  margin-left: -15px; 
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 15px; 
+  background-clip: padding-box;
+}
+
+/* Style each image card */
+.image-card {
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background: white;
+}
+
+.image-card img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.image-card img:hover {
+  transform: scale(1.05);
+}
+
+
+/* ---for hair--- */
+
+.hair-main{
+  background-image: url('https://i.pinimg.com/736x/26/42/34/2642348668911c3bf89d11292c276e7d.jpg');
+  margin-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 80px;
+  margin-top: 91px;
+  margin-bottom: -100px;
+}
+.hair-text1{
+  margin-left: 500px;
+  text-align: center;
+  background-color: #bbd4ed;
+  width: 660px;
+  border-radius: 40px;
+  padding: 8px;
+  font-family: "Emilys Candy", serif;
+  border: 1px solid black;
+}
+.hair-text2{
+  margin-left: 340px;
+  margin-top: 100px;
+  background-color: #cadff4;
+  width: 260px;
+  border-radius: 150px;
+  height: 220px;
+  padding: 50px;
+  font-family: "Montez", cursive;
+  font-size: xx-large;
+  font-weight: bold;
+  border: 1px solid black;
+}
+.hair-text3{
+  margin-left: 630px;
+  margin-top: -100px;
+  background-color: #cadff4;
+  width: 260px;
+  border-radius: 150px;
+  height: 220px;
+  padding: 40px;
+  padding-left: 60px;
+  font-family: "Montez", cursive;
+  font-size: xx-large;
+  font-weight: bold;
+  border: 1px solid black;
+}
+.hair-text4{
+  margin-left: 910px;
+  margin-top: -350px;
+  background-color: #cadff4;
+  width: 260px;
+  border-radius: 150px;
+  height: 220px;
+  padding: 50px;
+  font-family: "Montez", cursive;
+  font-size: xx-large;
+  font-weight: bold;
+  border: 1px solid black;
+}
+.hair-text5{
+  margin-left: 1180px;
+  margin-top: -100px;
+  background-color: #cadff4;
+  width: 260px;
+  border-radius: 150px;
+  height: 220px;
+  padding: 50px;
+  font-family: "Montez", cursive;
+  font-size: xx-large;
+  font-weight: bold;
+  border: 1px solid black;
+}
+.hair-text5:hover{
+  background-color:#dae9f5 ;
+  transform: translateY(5px);
+}
+.hair-text4:hover{
+  background-color:#dae9f5 ;
+  transform: translateY(5px);
+}
+.hair-text3:hover{
+  background-color:#dae9f5 ;
+  transform: translateY(5px);
+}
+.hair-text2:hover{
+  background-color:#dae9f5 ;
+  transform: translateY(5px);
+}
+.container2{
+  margin-left: 310px;
+  margin-right: 50px;
+  border:1px solid black;
+  margin-top: 150px;
+  padding: 50px;
+  border-radius: 80px;
+  background-color:#cfe4f9 ;
+}
+#hair-category1{
+  background-color:#dae9f5 ;
+}
+#hair-category1:hover{
+  background-color:#e2ebf4 ;
+}
+.hair-section {
+  margin-top: 50px;
+  margin-left: 260px;
+  border: 1px solid black;
+  border-radius: 50px;
+  height:fit-content;
+  width:82%;
+  background-color:#cfe4f9 ;
+  text-align: center;
+  padding:30px ;
+  font-family: "Emilys Candy", serif;
+  font-size: xx-large;
+}
+.spa-reminder-box {
+  background-color: #D2BBC9;
+  color: #44222A;
+  font-family: "Emilys Candy", serif;
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  border-left: 6px solid #D37AA2;
+  border-right: 6px solid #D37AA2;
+  border-radius: 20px;
+  margin: 30px;
+  width: fit-content;
+  margin-top: 100px;
+  margin-left: 570px;
+  animation: blink 4s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.heart {
+  color: #E24C88;
+  font-size: 20px;
+}
+
+
+/* ---for skin--- */
+
+.skin-main{
+  background-image: url('https://i.pinimg.com/736x/bd/9f/ae/bd9fae128c95e9cd47967024b3712a0c.jpg');
+  margin-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 80px;
+  margin-top: 91px;
+  margin-bottom: -100px;
+}
+.skin-head {
+  font-family: "Emilys Candy", serif;
+  text-align: center;
+  margin-left: 600px;
+  border: 1px solid black;
+  width: 510px;
+  border-radius: 30px;
+  height: 60px;
+  padding: 10px;
+  background-color:#efbfdb ;
+}
+.skin-type-container {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  margin-left:240px;
+}
+.skin-card {
+  border-radius: 20px;
+  width:300px;
+  height:200px;
+  padding:20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  background-color: #fffdfd;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: "Delius Swash Caps", cursive;
+}
+.skin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.skin-card h3 {
+  margin-bottom:10px;
+  font-size: 24px;
+  font-family:"Love Ya Like A Sister", cursive;
+}
+.skin-card p {
+  font-size:18px;
+  color: #444;
+}
+.dry {
+  margin-top:80px;
+  background-color: #f6e0dc;
+}
+.oily {
+  background-color: #e5faf8;
+}
+.sensitive {
+  background-color: #fbeaf3;
+}
+.combo {
+  margin-top:80px;
+  background-color: #ece8fb;
+}
+.skin-category {
+  margin-left:300px;
+  margin-top:50px;
+  display: flex;
+  background-color:#f3c9d8;
+  padding:50px;
+  width:165vh;
+  height:220px;
+  border-radius:70px;
+  border:1px solid black;
+}
+.category{
+  background-color:#d28ba4;
+  border-radius:40px;
+  border:1px solid black;
+  text-align: center;
+  font-size:25px;
+  font-family:"Emilys Candy", serif;
+  padding:26px;
+  margin: 10px;
+  width:700px;
+  height: 100px;
+}
+.category-head {
+  text-decoration: none;
+  color:black;
+}
+.category:hover {
+  transform: translateY(5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  font-size:27px;
+}
+.skin-section {
+  margin-top: 50px;
+  margin-left:260px;
+  border: 1px solid black;
+  border-radius: 50px;
+  height:fit-content;
+  width:82%;
+  background-color:#f3c9d8 ;
+  text-align: center;
+  padding:30px ;
+  font-family: "Emilys Candy", serif;
+}
+
+
+/* ---for photography--- */
+
+.photography-main{
+  background-image: url('https://i.pinimg.com/736x/44/3d/90/443d90a9ef954450d243441fe243e09e.jpg');
+  margin-left: 10px;
+  padding-top: 18px;
+  padding-bottom: 80px;
+  margin-top: 91px;
+  margin-bottom: -100px;
+}
+.photo-text1{
+  margin-left: 600px;
+  background-color: #f4c44a;
+  width: 410px;
+  border-radius: 40px;
+  padding: 8px;
+  font-family: "Emilys Candy", serif;
+  border: 1px solid black;
+  font-weight: 400;
+  text-align: center;
+}
+.photo-mid-section{
+  margin-left: 260px;
+  margin-top: 50px;
+}
+.cafe-section {
+  background-color: #f7e2e9;
+  padding:50px;
+  border-radius: 15px;
+  text-align: center;
+  margin: 10px;
+  position: relative;
+  width:162vh;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+.section-heading {
+  font-family: "Delius Swash Caps", cursive;
+  font-size: 28px;
+  margin-bottom:30px;
+  color: #3E2B2E;
+}
+.cafe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+  justify-items: center;
+}
+.cafe-card {
+  background: #FFFFFF;
+  border: 2px dashed #F7D1E5;
+  border-radius: 15px;
+  padding: 15px;
+  max-width: 260px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+.cafe-card:hover {
+  transform: scale(1.03);
+}
+.cafe-card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.cafe-card p {
+  font-family: "Love Ya Like A Sister", cursive;
+  font-size: 20px;
+  color: #6B4C4C;
+}
+.book-candle-section {
+  background-color: #d1d1e1;
+  padding: 50px;
+  text-align: center;
+  border-radius: 15px;
+  margin-left: 80px;
+  margin-top:50px;
+  width: 140vh;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+  position: relative;
+}
+.book-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+.book-card {
+  background-color: #fff;
+  border: 2px dashed #F3CCE2;
+  border-radius: 15px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.03);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+.book-card:hover {
+  transform: scale(1.03);
+}
+.book-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.book-card p {
+  font-family: "Love Ya Like A Sister", cursive;
+  font-size:20px;
+  color: #6B4C4C;
+  line-height: 1.4;
+}
+.pose-section{
+  background-color: #dac1d3;
+  padding:50px;
+  border-radius: 15px;
+  text-align: center;
+  margin-left: 200px;
+  margin-top:50px;
+  position: relative;
+  max-width: 700px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+.pose-card1{
+  text-decoration: none;
+  color:black;
+}
+.pose-card{
+  background-color: #fff;
+  border: 2px dashed #F3CCE2;
+  border-radius: 15px;
+  padding:15px;
+  width: 250px;
+  margin-left: 180px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.03);
+  transition: transform 0.3s ease;
+  font-family: "Love Ya Like A Sister", cursive;
+  font-size: 20px;
+}
+.pose-card:hover {
+  transform: scale(1.03);
+}
+.bottom1, .bottom2, .bottom3{
+  width:90%;
+  background-color: #f7e2e9;
+  border:1px solid black;
+  margin-top: 100px;
+  border-radius: 50px;
+  height: fit-content;
+  padding: 10px;
+}
+.bottom2{
+  background-color: #d1d1e1;
+}
+.bottom3{
+  background-color: #dac1d3;
+}
+
+
+/* ---for nails--- */
+
+.nails-main{
+  background-image: url('https://i.pinimg.com/originals/ca/6b/99/ca6b9998b20c0a6fb5e2e6911742a273.jpg');
+  margin-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 80px;
+  margin-top: 91px;
+  margin-bottom: -100px;
+}
+.nails-head {
+  font-family: "Emilys Candy", serif;
+  margin-left: 600px;
+  text-align: center;
+  border: 1px solid black;
+  width: 550px;
+  border-radius: 30px;
+  height: 60px;
+  padding: 10px;
+  background-color:#e0c47d ;
+}
+.nail-tips-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  margin-left: 240px;
+}
+.nail-tips-card {
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid black;
+  box-shadow: 2px 4px 10px rgba(255, 192, 203, 0.3);
+  transition: all 0.3s ease-in-out;
+  width:200px;
+  height:250px;
+}
+.nail-tips-card:hover {
+  transform: translateY(-5px);
+  font-size:22px;
+}
+.nail-tips-card h3 {
+  font-size: 20px;
+  font-family: "Love Ya Like A Sister", cursive;
+  margin-bottom:20px;
+}
+.nail-tips-card p {
+  font-size: 18px;
+  color: #444;
+  font-family:"Delius Swash Caps", cursive;
+}
+.one {
+  background-color: #e5f8dc;
+}
+.two {
+  background-color: #e5e0f8;
+  margin-top:50px;
+}
+.three {
+  background-color: #f7d8fa;
+  margin-top:100px;
+}
+.four {
+  background-color: #f7d8fa;
+  margin-top:100px;
+}
+.five {
+  background-color: #e5e0f8;
+  margin-top:50px;
+}
+.six {
+  background-color: #e5f8dc;
+}
+.nails-section {
+  margin-top: 50px;
+  margin-left:260px;
+  border: 1px solid black;
+  border-radius: 50px;
+  height:fit-content;
+  width:82%;
+  background-color:#f1d999 ;
+  text-align: center;
+  padding:30px ;
+  font-family: "Emilys Candy", serif;
+}
+
+
+/* ---for recipe--- */
+
+.recipe-main{
+  background-image: url('https://i.pinimg.com/1200x/f8/82/78/f88278f81ad8bc7b17c8a94d8ba42a83.jpg');
+  margin-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 80px;
+  margin-top: 91px;
+  margin-bottom: -100px;
+}
+.recipe-head {
+  font-family: "Emilys Candy", serif;
+  margin-left: 600px;
+  text-align: center;
+  border: 1px solid black;
+  width: 530px;
+  border-radius: 30px;
+  height: 60px;
+  padding: 10px;
+  background-color:#c28080 ;
+}
+.recipe-content {
+  margin-left: 260px;
+  margin-top: 50px;
+}
+.recipe-card {
+  border-radius: 20px;
+  border:1px solid black;
+  width:fit-content;
+  background-color: #87667b;
+  text-align: center;
+  padding: 10px;
+}
+.recipe-img {
+  border-radius: 20px;
+  height:250px;
+  width:250px;
+}
+.item-head{
+  font-family:"Love Ya Like A Sister", cursive;
+  color:white;
+  font-size: 30px;
+  padding-top: 10px;
+}
+.show-recipe {
+  padding:10px;
+  margin-bottom:10px;
+  border-radius: 10px;
+  background-color: #ce6767;
+  font-family:"Delius Swash Caps", cursive;
+}
+.show-recipe:hover {
+  background-color: #c5596e;
+}
+
+
+/* ---for recipedetasils--- */
+
+.recipe-details {
+  margin-left: 260px;
+}
+.rd-head {
+  font-family: "Margarine", sans-serif;
+  margin-left: 550px;
+  margin-top:20px;
+  background-color: #bccdb2;
+  width:150px;
+  text-align: center;
+  padding:10px 0px 10px 0px;
+  border-radius: 30px;
+  border: 1px solid black;
+}
+.ingr-img {
+  margin-top:50px;
+  display: flex;
+  margin-left: 100px;
+}
+.rd-img {
+  border-radius: 20px;
+  height:350px;
+  width:450px;
+}
+.ingredients-box {
+  position: relative;
+  margin-left: 150px;
+  background-color: #f2cfd7;
+  border: 2px solid #000;
+  border-radius: 12px;
+  padding: 30px 20px 20px 30px;
+  width: 60vh;
+  height:fit-content;
+}
+.line {
+  margin-top:2px;
+  margin-bottom:2px;
+  margin-left:-30px;
+  width:410px;
+}
+.ingr-head {
+  font-family:"Love Ya Like A Sister", cursive;
+  font-size:30px;
+  text-align: center;
+}
+.ingr-list {
+  margin-top: 20px;
+  font-family:"Delius Swash Caps", cursive;
+  font-size: 18px;
+  list-style: none;
+  margin-left:-30px;
+}
+.full-recipe {
+  margin-top:50px;
+  margin-left:100px;
+  background-color: #c1d5b5;
+  border-left: 6px solid rgb(146, 160, 139);
+  border-radius: 10px;
+  padding: 40px;
+  width:146vh;
+  height:fit-content;
+}
+.full-head {
+  font-size: 30px;
+  font-family:"Love Ya Like A Sister", cursive;
+}
+.full-list {
+  margin-top: 10px;
+  font-family:"Delius Swash Caps", cursive;
+  font-size: 18px;
+}
+.back-btn {
+  margin-top:50px;
+  margin-left:100px;
+  font-family:"Delius Swash Caps", cursive;
+  background-color: #e46b83;
+  padding: 10px;
+  border-radius: 10px;
+}
+.back-btn:hover {
+  background-color: #b84040;
+}
+
+
+/* ---for decor--- */
+
+.decor-main{
+  background-image: url('https://i.pinimg.com/736x/35/8f/50/358f50bca83d9175619a301d70564334.jpg');
+  margin-left: 10px;
+  padding-top: 18px;
+  padding-bottom: 80px;
+  margin-top: 91px;
+  margin-bottom: -100px;
+  width: 100%;
+}
+.decor-heading{
+  background-color: #e7a5ca;
+  width: 590px;
+  text-align: center;
+  margin-left: 580px;
+  padding: 8px;
+  border-radius: 30px;
+}
+.decor-heading-text{
+  font-family: "Emilys Candy", serif;
+}
+.decor-carousel-section{
+  margin-left: 400px;
+  width: 935px;
+  height: 585px;
+  background-color: #e7a5ca;
+  padding: 18px;
+  border-radius: 90px;
+  margin-top: 50px;
+}
+#slides {
+  width: 900px;
+  height: 550px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  margin-left: -450px;
+  border-radius: 50px;
+}
+.decor-mid-section {
+  margin-top: 100px;
+}
+.decor-container{
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  margin-left: 240px;
+}
+.decor-card{
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid black;
+  box-shadow: 2px 4px 10px rgba(255, 192, 203, 0.3);
+  transition: all 0.3s ease-in-out;
+  width:250px;
+  height:320px; 
+}
+.decor-card:hover {
+  transform: translateY(-5px);
+  font-size:22px;
+}
+.decor-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+.decor-card h4 {
+  font-size: 20px;
+  font-family: "Love Ya Like A Sister", cursive;
+  margin-bottom:20px;
+}
+.one {
+  background-color: #E5F8DC;
+}
+.two {
+  background-color: #E5E0F8;
+  margin-top:50px;
+}
+.three {
+  background-color: #F7D8FA;
+  margin-top:100px;
+}
+.four {
+  background-color: #F7D8FA;
+  margin-top:100px;
+}
+.five {
+  background-color: #E5E0F8;
+  margin-top:50px;
+}
+.six {
+  background-color: #E5F8DC;
+}
+.decor-mid-section1 {
+  margin-top: 100px;
+}
+.decor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 10px;
+  max-width: 1200px;
+  margin-left: 450px;
+  margin-right: 200px;
+}
+.decor-card1{
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid black;
+  box-shadow: 2px 4px 10px rgba(255, 192, 203, 0.3);
+  transition: all 0.3s ease-in-out;
+  width:250px;
+  height:320px; 
+  background-color: #e7a5ca;
+}
+.decor-card1:hover {
+  transform: scale(1.1,1.1);
+}
+.decor-card1 img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+.decor-card1 h4 {
+  font-size: 20px;
+  font-family: "Love Ya Like A Sister", cursive;
+  color: #8C0E10;
+  margin: 15px 0 5px;
+}
+
+
+/* ---for bags--- */
+
+.bags-main{
+  background-image: url('https://i.pinimg.com/736x/c8/53/19/c8531993312cf32d6ec40f27aff766e4.jpg');
+  margin-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 80px;
+  margin-top: 91px;
+  margin-bottom: -100px;
+}
+.bags-head {
+  font-family: "Emilys Candy", serif;
+  margin-left: 600px;
+  text-align: center;
+  border: 1px solid black;
+  width: 370px;
+  border-radius: 30px;
+  height: 60px;
+  padding: 10px;
+  background-color:#e9a681 ;
+}
+.bags-content {
+  margin-left:260px;
+}
+.bags-btns {
+  margin-left: 50px;
+}
+.bags {
+  padding:10px 20px 10px 20px;
+  text-align: center;
+  border-radius:10px;
+  background-color: #9ca495;
+  margin-left:50px;
+  margin-top:20px;
+  border:none;
+  font-family:"Love Ya Like A Sister", cursive;
+  font-size:25px;
+}
+
+
+/* ---for sippers--- */
+
+.sippers-main{
+  background-image: url('https://i.pinimg.com/1200x/0b/24/35/0b2435ba54570d6adcb901c7a615c4e0.jpg');
+  margin-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 80px;
+  margin-top: 91px;
+  margin-bottom: -100px;
+}
+.sippers-head {
+  font-family: "Emilys Candy", serif;
+  text-align: center;
+  margin-left: 650px;
+  border: 1px solid black;
+  width: 310px;
+  border-radius: 30px;
+  height: 60px;
+  padding: 10px;
+  background-color:#f0a2b8 ;
+}
+.sippers-content {
+  margin-left:260px;
+}
+.tumbler {
+  display: flex;
+  justify-content: space-between;
+  padding:50px;
+  margin-top:50px;
+  width:175vh;
+  background-color: #aebb98;
+  border-radius: 20px;
+}
+.tumbler img {
+  height:350px;
+  width:300px;
+  border-radius: 20px;
+  border:1px solid black;
+}
+
+
+/* ---for phone covers--- */
+
+.phonecovers-main{
+  background-image: url('https://i.pinimg.com/1200x/e4/a7/c5/e4a7c5f18d92ca21930c27ba4fa923e2.jpg');
+  margin-left: 10px;
+  padding-top: 18px;
+  padding-bottom: 80px;
+  margin-top: 91px;
+  margin-bottom: -100px;
+  width: 100%;
+}
+.phone-heading{
+  background-color: #bf738f;
+  width: 550px;
+  text-align: center;
+  margin-left: 580px;
+  padding: 8px;
+  border-radius: 30px;
+}
+.phone-heading-text{
+  font-family: "Emilys Candy", serif;
+  text-align: center;
+}
+.phone-mid-section{
+  margin-top: 100px;
+}
+.phone-section1{
+  border-radius: 50px;
+  border: 1px solid black;
+  padding: 20px;
+  width: 1000px;
+  margin-left: 300px;
+  margin-top: -50px;
+  background-color: #742828;
+  height: 700px;
+  padding-left: 50px;
+}
+.phone-section2{
+  border-radius: 50px;
+  border: 1px solid black;
+  padding: 20px;
+  width: 1000px;
+  margin-left: 500px;
+  margin-top: 50px;
+  background-color: #742828;
+  height: 700px;
+  padding-left: 50px;
+}
+.phone-section3{
+  border-radius: 50px;
+  border: 1px solid black;
+  padding: 20px;
+  width: 1000px;
+  margin-left: 300px;
+  margin-top: 50px;
+  background-color: #742828;
+  height: 700px;
+  padding-left: 50px;
+}
+.phone-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 10px;
+  max-width: 1200px;
+  margin: auto;
+}
+.phone-card {
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid black;
+  box-shadow: 2px 4px 10px rgba(255, 192, 203, 0.3);
+  transition: all 0.3s ease-in-out;
+  width:250px;
+  height:320px;
+  background-color: #bf738f;
+}
+.phone-card:hover {
+  transform: translateY(-5px);
+  font-size:22px;
+}
+.phone-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+.phone-card h4 {
+  font-size: 1.2rem;
+  color: #8C0E10;
+  margin: 15px 0 5px;
+}
+
+
+/* ---for wallpapers--- */
+
+.wallpaper-main{
+  background-image: url('https://i.pinimg.com/736x/6f/5a/45/6f5a45a0e99a16aeecfa8998e83bcb71.jpg');
+  margin-left: 10px;
+  padding-top: 18px;
+  padding-bottom: 80px;
+  margin-top: 91px;
+  margin-bottom: -100px;
+  width: 100%;
+}
+.wallpaper-heading{
+  background-color: #f7c4e1 ;
+  width: 610px;
+  margin-left: 580px;
+  padding: 8px;
+  border-radius: 30px;
+}
+.wallpaper-heading-text{
+  font-family: "Emilys Candy", serif;
+  text-align: center;
+}
+.wallpaper-mid-section {
+  margin-left:260px;
+}
+.wallpaper1 {
+  display: flex;
+  justify-content: space-between;
+  padding:50px;
+  margin-top:50px;
+  width:160vh;
+  background-color: #9d5165  ;
+  border-radius: 20px;
+  margin-left: 50px;
+}
+.wallpaper1 img {
+  height:290px;
+  width:260px;
+  border-radius: 20px;
+  border:1px solid black;
+}
+.wallpaper1 img:hover{
+  transform: translateY(-5px);
+}
+.wallpaper-border{
+  height:310px;
+  width:280px;
+  background-color: #633f55;
+  display: flex;
+  border-radius: 40px;
+}
+
+
+
+/* ------------------------------------------- media query ---------------------------------------------- */
+
+@media screen and (max-width:1200px) {
+    
+  .navbar-brand{
+    margin-left: 150px;
+  }
+
+  /* ===logo=== */
+
+  .bgimg {
+    margin-left:-94px;
+  }
+  .logovid {
+    margin-left:430px;
+    height:380px;
+    width:380px;
+  }
+
+  /* ===common bars=== */
+
+  .navbar {
+    height:95px;
+  }
+  .logo {
+    height:70px;
+    width:100px;
+  }
+  .h1 {
+    font-size: 37px;
+    margin-left: 50px;
+  }
+  .bytasha {
+    font-size: 20px;
+  }
+  .sidebar {
+    width:210px;
+  }
+  .sidebar-lists1, .sidebar-lists {
+    margin-left: -15px;
+  }
+
+  
+  /* ===home page=== */
+
+  .search{
+    width:500px;
+    margin-left: 280px;
+  }
+  .description{
+    height:50px;
+    padding: 5px;
+    margin-left: 470px;
+  }
+  .description:before{
+    top:20px;
+  }
+  .description1{
+    height:50px;
+    padding: 5px;
+    margin-left: 550px;
+  }
+  .description1:before{
+    top:20px;
+  }
+  .bowimg{
+    font-size: 30px;
+    margin-top:-75px;
+  }
+  .cards-block.carousel{
+    height:260px;
+  }
+  .card-img{
+    height: 260px;
+  }
+  .side-section{
+    height: 250px;
+    width:250px;
+    margin-top: 10px;
+  }
+
+  /* ===footer==== */
+
+  .footer {
+    margin-left: 210px;
+  }
+  .footer-text, .footer-mail, .footer-follow  {
+    width:250px;
+  }
+  
+
+  /* ===wishlist=== */
+
+  .list-page-main{
+    margin-left: 320px;
+  }
+  .list-description{
+    margin-left: 190px;
+    height: 40px;
+    width: 450px;
+  }
+  .list-description:before{
+    margin-top: -5px;
+  }
+  .list-description1:before{
+    margin-top: -5px;
+  }
+  .list-description1{
+    margin-left: 290px;
+    height: 40px;
+    width: 450px;
+  }
+  .bowimgg{
+    margin-left: 400px;
+    font-size: 30px;
+    margin-top: -80px;
+  }
+  .list-group{
+   height: 600px;
+   margin-left: 60px;
+   width: 700px;
+   margin-right: -500px;
+  }
+  .list-heading{
+    margin-left: 240px;
+  }
+  .list-text2{
+    text-align: center;
+  }
+  .container{
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+  .other-section{
+    margin-top: 400px;
+  }
+  .heart-emoji{
+    margin-left: 130px;
+  }
+  .list-side-section{
+    margin-top: 10px;
+    margin-left: -50px;
+  }
+  .sparkle-container{
+    margin-top: -100px;
+  }
+  .sparkle-container1{
+    margin-top: 900px;
+  }
+
+  /* ====fashion==== */
+
+  .fashion-text1{
+    margin-left: 400px;
+  }
+  .fashion-carousel{
+    height: 430px;
+    width: 380px;
+    margin-top:50px;
+    margin-left: -90px;
+  }
+  .carousel-inner{
+    height: 390px;
+    width: 330px;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .fashion-text-class{
+    margin-top: 100px;
+    margin-left: -70px;
+  }
+  .fashion-side-section{
+    margin-left: 350px;
+  }
+  .fashion-side-section:hover{
+    height:150px;
+    padding: 25px;
+    width: 320px;
+  }
+  .fashion-text{
+    margin-left: 360px;
+    margin-top: 180px;
+  }
+  .mid-section{
+    margin-top: -100px;
+    margin-left: 470px;
+    width: 650px;
+  }
+  .col:hover{
+    padding-top: 50px;
+  }
+  #col1:hover{
+    padding-top: 50px;
+  }
+  .col{
+    width: 330px;
+  }
+  #col1{
+    width: 230px;
+  }
+  .section1, .section2, .section3, .section4, .section5{
+    width: 75%;
+  }
+
+  /* ====hair==== */
+
+  .hair-text1{
+    margin-left: 340px;
+  }
+  .hair-text2{
+    margin-left: 270px;
+    width: 220px;
+    height: 200px;
+    padding: 30px;
+  }
+  .hair-text3{
+    margin-left: 490px;
+    width: 220px;
+    height: 200px;
+    padding: 30px;
+  }
+  .hair-text4{
+    margin-left: 710px;
+    margin-top: -320px;
+    width: 220px;
+    height: 200px;
+    padding: 30px;
+  }
+  .hair-text5{
+    margin-left: 930px;
+    width: 220px;
+    height: 200px;
+    padding: 30px;
+  }
+  .hair-section1, .hair-section2{
+    margin-left: 300px;
+  }
+  .spa-reminder-box{
+    margin-left: 350px;
+  }
+}
+
+
+@media screen and (max-width:600px) {
+
+  /* ===logo=== */
+
+  .bglogo {
+    width:60vh;
+  }
+  .bgimg {
+    margin-left:-245px;
+  }
+  .logovid {
+    margin-left:130px;
+    margin-top: -550px;
+    height:360px;
+    width:360px;
+  }
+
+
+  /* ===common bars=== */
+
+  
+  .navbar {
+    height:91px;
+  }
+   .h1 {
+    font-size: 27px;
+  }
+  .sidebar-lists, .sidebar-lists1 {
+    width: 50px;
+    padding: 8px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sidebar-lists, .sidebar-lists1 {
+    font-size: 0;
+  }
+  .icons {
+    padding-right: 0;
+  }
+  .sidebar{
+    width: 85px;
+  }
+  .logo{
+    height: 50px;
+    width: 60px;
+    margin-left: 2px;
+  }
+  .bytasha{
+    font-size:15px;
+  }
+
+  /* ====home page==== */
+
+  .description{
+    width: 360px;
+    height:45px;
+    margin-left: 120px;
+  }
+  .description1{
+    width: 310px;
+    height:45px;
+    margin-left: 220px;
+  }
+  .description1:before {
+    margin-top: -5px;
+    right:99%;
+  }  
+  .description:before {
+    margin-top: -5px;
+    right:99%;
+  }
+  .text1{
+    font-size:22px;
+    padding:2px;
+  }
+  .search{
+    width:250px;
+    margin-left: 100px;
+    font-size:15px;
+  }
+  .btn1{
+    margin-top: 10px;
+    height:40px;
+    margin-left: 20px;
+    font-size:15px;
+  }
+  .bowimg{
+    font-size: x-large;
+    margin-left: 320px;
+    margin-top: -59px;
+  }
+  #bowimg2{
+    margin-top: -59px;
+    margin-left:270px;
+  }
+  .signup-form{
+    width:250px;
+    height:410px;
+    margin-left: 180px;
+  }
+  .form-label{
+    font-size: small;
+  }
+  .field1{
+    margin-top: 0;
+  }
+  .signup-text{
+    font-size: large;
+    margin-top:0;
+  }
+  .popupbtn-2{
+    height: 30px;
+    width:150px;
+    padding: 1px;
+    margin-top:0;
+  }
+  .login-form{
+    width:250px;
+    height:300px;
+    margin-left: 180px;
+  }
+  .login-text{
+    font-size: large;
+    margin-top:0;
+  }
+  .forgot-form{
+    width:250px;
+    height:200px;
+    margin-left: 180px;
+  }
+  .forgot-form-label{
+    margin-top: 20px;
+    font-size: small;
+  }
+  .popup-btn{
+    font-size: small;
+    margin-top:0;
+  }
+  .main2{
+    display: block;
+    margin-top:30px;
+  }
+  .cards-block.carousel{
+    height:260px;
+    width:65vh;
+    margin-left: 100px;
+  }
+  .card-img{
+    height: 260px;
+  }
+  .side-section{
+    margin-top:50px;
+    margin-left: 200px;
+    margin-bottom:-50px;
+    width: 250px;
+  }
+
+  /* =====footer====== */
+
+  .footer{
+    margin-left: 70px;
+  }
+  .footer1 {
+    display: block;
+  }
+  .footer-text, .footer-mail, .footer-follow{
+    height:200px;
+    width:fit-content;
+    font-size:15px;
+  }
+  .rating {
+    margin-top:20px;
+  }
+  .rate {
+    margin-left: -15px;
+  }
+  .footer-copyright{
+    font-size: 12px;
+  }
+
+  /* ====wishlist==== */
+
+  .list-page-main{
+    margin-top: 142px;
+  }
+  .list-description{
+    width: 280px;
+    margin-left: -150px;
+    height:35px;
+    font-size: 11px;
+    padding-top: 2px;
+  }
+  .list-description:before{
+    top:13px;
+  }
+  .list-description1{
+    width: 280px;
+    margin-left: -120px;
+    height:35px;
+    font-size: 11px;
+    padding-top: 7px;
+  }
+  .list-description1:before{
+    top:13px;
+  }
+  .bowimgg{
+    margin-left: 240px;
+    margin-top: -55px;
+    font-size: x-large;
+  }
+  .list-group{
+    margin-left: -185px;
+    width: 340px;
+    height: 700px;
+  }
+  .list-heading{
+    margin-top: -40px;
+    margin-left:-140px ;
+    font-size: x-large;
+  }
+  .list-heading1{
+    margin-top: -40px;
+    margin-left:70px ;
+    font-size: x-large;
+  }
+  .list-text2{
+    font-size: x-large;
+    margin-left: -30px;
+  }
+  #round-div1{
+    height: 80px;
+    width:90px;
+  }
+  .col11{
+    margin-left: -200px;
+    margin-top: -80px;
+  }
+  .col1 {
+    margin-top: 20px;
+    margin-left: -80px;
+  }
+  #skin-img{
+    margin-left: 12px;
+    margin-top: -50px;
+  }
+  .col3{
+    margin-top: 20px;
+    margin-left: -10px;
+  }
+  .col3 h6{
+    margin-top: -40px;
+  }
+  #nails-img{
+    margin-left: 20px;
+    margin-top: -50px;
+  }
+  .col12{
+    margin-top: -80px;
+    margin-left: 80px;
+  }
+  .col2 {
+    margin-top: -50px;
+    margin-left: -10px;
+  }
+  .col4{
+    margin-top:100px ;
+    margin-left:-190px ;
+  }
+  .col5{
+    margin-left: -30px;
+    margin-top: -10px;
+  }
+  .col6{
+    margin-left: 80px;
+    margin-top: -10px;
+  }
+  .col7{
+    margin-left:-200px ;
+    margin-top: 70px;
+  }
+  .col9{
+    margin-left: -180px;
+    margin-top: 150px;
+  }
+  .col10{
+    margin-top: 150px;
+    margin-left: 80px;
+  }
+  .sparkle-container{
+    margin-top: -130px;
+    margin-left: -240px;
+  }
+  .sparkle-container1{
+    margin-top: 1080px;
+    margin-left: -10px;
+  }
+  h6{
+    font-size: 12px;
+  }
+  .other-section{
+    margin-top: 500px;
+    margin-left: 240px;
+  }
+  .list-side-section{
+    width: 300px;
+  }
+  .heart-emoji{
+    margin-left: 70px;
+  }
+
+  /* ====fashion==== */
+
+  .fashion-text1{
+    margin-left: 130px;
+    width: 410px;
+    height:40px;
+    font-size: 20px;
+    padding: 5px;
+  }
+  .fashion-text-class{
+    margin-left: -260px;
+    margin-top: 80px;
+  }
+  .fashion-carousel{
+    margin-left: -260px;
+  }
+  .fashion-side-section{
+    margin-left: -230px;
+    margin-top: 80px;
+  }
+  .fashion-text{
+    margin-left: -270px;
+    margin-top: 70px;
+  }
+  .mid-section{
+    margin-left: 280px;
+    margin-top: -200px;
+    width: 320px;
+  }
+  .container1{
+    height: 520px;
+  }
+  .col{
+    width: 190px;
+    margin-left: -40px;
+    margin-right: 55px;
+  }
+  #col1{
+    width: 190px;
+    margin-left: -45px;
+    margin-right: -50px;
+  }
+  .col:hover{
+    font-size: 20px;
+  }
+  #col1:hover{
+    font-size: 20px;
+  }
+  #sscol{
+    margin-top: 165px;
+  }
+  .section1, .section2, .section3, .section4, .section5{
+    width: 80%;
+    margin-left:100px;
+  }
+
+  /* ====hair===== */
+
+  .hair-text1{
+    margin-left: 130px;
+    width: 410px;
+    height:40px;
+    font-size: 20px;
+    padding: 5px;
+  }
+  .hair-text2{
+    margin-left: 140px;
+    margin-top: 80px;
+    width: 200px;
+    height: 180px;
+    padding: 30px;
+    padding-top: 40px;
+    padding-left: 40px;
+    font-size: x-large;
+  }
+  .hair-text3{
+    margin-left: 340px;
+    margin-top: -80px;
+    width: 200px;
+    height: 180px;
+    padding: 30px;
+    padding-top: 40px;
+    padding-left: 40px;
+    font-size: x-large;
+  }
+  .hair-text4{
+    margin-left: 140px;
+    margin-top: -80px;
+    width: 200px;
+    height: 180px;
+    padding: 30px;
+    padding-top: 40px;
+    padding-left: 40px;
+    font-size: x-large;
+  }
+  .hair-text5{
+    margin-left: 340px;
+    margin-top: -80px;
+    width: 200px;
+    height: 180px;
+    padding: 30px;
+    padding-top: 40px;
+    padding-left: 40px;
+    font-size: x-large;
+  }
+  .container2{
+    margin-left: 130px;
+    margin-right: 10px;
+    margin-top: 100px;
+    padding: 50px;
+  }
+  .hair-section1, .hair-section2{
+    margin-left: 130px;
+    width: 420px;
+    font-size: x-large;
+  }
+  .spa-reminder-box{
+    margin-left: 140px; 
+    width: 400px;
+  }
+
+  /* =====skin===== */
+
+  .skin-main {
+    margin-left:-150px;
+    margin-top:90px;
+  }
+  .skin-head{
+    width:350px;
+    height:40px;
+    font-size:20px;
+    padding:5px;
+    margin-left:310px;
+  }
+  .skin-type-container {
+    margin-left: 240px;
+    margin-top: -80px;
+    display: block;
+  }
+  .skin-card {
+    width:420px;
+    height:120px;
+    padding:20px;
+    margin-bottom:20px;
+  }
+  .skin-card h3 {
+    font-size: 20px;
+  }
+  .skin-card p {
+    font-size: 15px;
+  }
+  .dry {
+    background-color: #F6E0DC;
+  }
+  .oily {
+    background-color: #E5FAF8;
+  }
+  .sensitive {
+  background-color: #FBEAF3;
+  }
+  .combo {
+    margin-top:20px;
+    background-color: #ECE8FB;
+  }
+  .skin-category {
+    margin-left:250px;
+    margin-top: -10px;
+    border-radius: 40px;
+    width:67vh;
+    height:24vh;
+    display: block;
+  }
+  .category{
+    width:60vh;
+    height:50px;
+    padding: 10px;
+    margin-bottom:40px;
+    margin-left:-25px;
+    margin-top:-25px;
+  }
+  .category-head {
+    font-size:20px;
+  }
+  .skin-section {
+    margin-left:250px;
+    width:67vh;
+    padding:10px;
+    height:fit-content;
+  }
+  .skin-section h2 {
+    font-size: 20px;
+  }
+}
+
+
+
+/* admin */
+
+.admin-cards ul{
+  margin-top:100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards-lists{
+  background-color: #daadb3; 
+  margin-top: 8px;
+  padding-top: 50px;
+  width: 300px;
+  height:150px;
+  text-align: center;
+  list-style: none;
+  font-family: "Love Ya Like A Sister", cursive;
+  font-weight:500;
+  font-size:30px;
+  border-radius: 50px;
+  margin-left:50px;
+  margin-top: 50px;
+}
+.back-admin {
+  margin-top:110px;
+  margin-left:70px;
+  padding: 8px;
+  background-color: #efbed1;
+  border-radius: 30px;
+  font-family: "Delius Swash Caps", cursive;
+}
+
+/* admin nav */
+
+.logout-btn {
+  padding: 8px;
+  background-color: #e46b83;
+  border-radius: 30px;
+  font-family: "Delius Swash Caps", cursive;
+}
+
+/* admin fashion */
+
+.fashion-section {
+  font-family: "Love Ya Like A Sister", cursive;
+  height:fit-content;
+  width: 800px;
+  margin-left: 400px;
+  margin-top: -40px;
+  padding: 50px;
+  background-color: #F2EBEB;
+}
+.fashion-form {
+  margin:20px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.fashion-subsection1 {
+  padding: 20px;
+}
+.fhead {
+  display: flex;
+  justify-content: space-between;
+}
+.show-fashion-btn {
+  padding: 8px;
+  background-color: #c78ea4;
+  border-radius: 10px;
+  font-family: "Delius Swash Caps", cursive;
+}
+.submit-btn {
+  padding: 8px;
+  background-color: #c78ea4;
+  border-radius: 10px;
+  font-family: "Delius Swash Caps", cursive;
+}
+.delete-btn {
+  padding:12px;
+  padding-top:7px;
+  padding-bottom: 15px;
+  margin-left:20px;
+  color:rgb(153, 11, 11);
+  background-color: #eee1e6;
+  border-radius: 10px;
+  font-family: "Delius Swash Caps", cursive;
+}
+
+/* show fashion  */
+
+.fashion-table {
+  display: flex;
+}
+.add-fashion {
+  margin-top: 100px;
+  margin-left: 700px;
+  text-align: center;
+  padding: 8px;
+  background-color: #c78ea4;
+  border-radius: 10px;
+  font-family: "Delius Swash Caps", cursive;
+}
+.comfy-table, .chic-table, .desi-table, .shadi-table, .glam-table {
+  margin-left: 30px;
+}
+.comfy-head {
+  margin-top:10px;
+  padding-left:50px;
+  border-bottom:2px solid black;
+  text-align: center;
+  font-family: "Delius Swash Caps", cursive;
+}
+tr {
+  border-bottom:1px solid black;
+}
+td {
+  border-right: 1px solid black;
+}
+.i-head {
+  font-family: "Love Ya Like A Sister", cursive;
+  font-size:30px;
+  padding-left:70px;
+  padding-right:70px;
+  border-right: 1px solid black;
+}
+.de-head {
+  font-family: "Love Ya Like A Sister", cursive;
+  font-size:30px;
+  padding-left:50px;
+  padding-right:50px;
+}
+.d-head {
+  padding-left:50px;
+  border:none;
+}
+.c-img {
+  padding:10px;
+  margin-left:30px;
+  height:150px;
+  width:150px;
+}
