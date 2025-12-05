@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use('/uploads', express.static('uploads'));
 
-mongoose.connect("mongodb://127.0.0.1:27017/self")
+mongoose.connect("mongodb://127.0.0.1:27017/imjustagirl")
 .then(()=> {
   console.log("connected successfully");
   app.listen(5000);
